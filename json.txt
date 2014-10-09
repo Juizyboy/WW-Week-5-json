@@ -1,0 +1,10 @@
+$userdata = file_get_contents('../userdata.json');
+					$userdata = json_decode($userdata, true);
+					foreach($userdata['userdata'] as $item) {
+						$usernamejson = $item['username'];
+						$passwordjson = $item['password'];
+						if ($username == $usernamejson && $password == $passwordjson) {
+							$_SESSION['username'] = $username;
+							$loggedin = true;
+							echo "U bent nu ingelogd.";
+						}
