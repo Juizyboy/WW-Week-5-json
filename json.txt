@@ -8,3 +8,5 @@ $userdata = file_get_contents('../userdata.json');
 							$loggedin = true;
 							echo "U bent nu ingelogd.";
 						}
+
+{"userdata":[{"username":"Juizyboy","password":"derp","activenumber":"984f0ab52c7231dcafe84c83acf3e691805688d41347","activated":0}]}
